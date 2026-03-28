@@ -1,0 +1,9 @@
+<h1>My Application</h1>
+
+<button (click)="loadUsers()">Load Users</button>
+
+<ul>
+  <li *ngFor="let user of users">
+    {{ user.id }} - {{ user.name }} - {{ user.email }}
+  </li>
+</ul>
